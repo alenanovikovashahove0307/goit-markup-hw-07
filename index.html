@@ -31,16 +31,16 @@
            <li><a class="header-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
         </div>
-        <!-- <button type="button" class="menu" data-mobilemenu-open> -->
+        <button type="button" class="menu" data-menu-open>
           <svg class="icon-menu-svg" width="32" height="22"> 
               <use href="./img/icons.svg#icon-charm_menu-hamburger-1"></use>
           </svg>
         </button>
-  </div>
-  <!-- <div class="mob-menu is-hidden" data-mobilemenu>
+    </div>
+  <div class="mob-menu" data-menu>
     <div class="container">
      <div class="mob-menu-top">
-      <button type="button" class="menu-close" data-mobilemenu-close>
+      <button type="button" class="menu-close" data-menu-close>
           <svg class="icon-menu-close" width="8" height="8"> 
               <use href="./img/icons.svg#icon-close-black-18dp-2-1-2-1"></use>
           </svg>
@@ -84,15 +84,15 @@
                       </a></li>
       </ul>
      </div>
-    </div>  -->
+    </div> 
     </div>
   </div>        
   </header>
   <main>
     <section class="hero">
       <div class="container">
-        <h1 class="hero-title">Effective Solutionsfor Your Business</h1>
-        <button type="button" class="hero-btn" data-mobilemenu-open>Order Service</button>
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button type="button" class="hero-btn" data-modal-open>Order Service</button>
       </div>
     </section> 
     <section class="purposes">
@@ -174,7 +174,7 @@
                   <div class="team-abount">
                   <h3 class="title">Mark Guerrero</h3>
                   <p class="texte">Product Designer</p>
-                  <!-- </div> -->
+                  </div>
                   <ul class="team-icon list">
                     <li class="icon-team">
                       <a class="icon-link link" href="">
@@ -203,8 +203,7 @@
                       </a>
                     </li>
                   </ul>
-                  </div>
-                  <li class="team-foto">
+                    <li class="team-foto">
                   <img class="foto" srcset="./img/foto-img-2-1x.jpg 1x,./img/foto-img-2-2x.jpg 2x" src="./img/foto-img-2.jpg" alt="foto" width="264" height="260">
                   <div class="team-abount">
                   <h3 class="title">Tom Ford</h3>
@@ -413,10 +412,10 @@
     </div>
     </div>
     </footer>
-  <div class="backdrop is-hidden" data-mobilemenu>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <form action="modal" class="modal-form">
-        <button type="button" class="modal-btn" data-mobilemenu-close></button>
+        <button type="button" class="modal-btn" data-modal-close></button>
         <svg class="modal-btn-svg" width="8" height="8"> 
               <use href="./img/icons.svg#icon-close-black-18dp-2-1-1"></use>
         </svg>
@@ -445,7 +444,7 @@
           <div class="modal-contact-textarea">
             <label for="comment" class="modal-list">Comment</label>
               <textarea class="modal-textarea" name="comment" cols="30" rows="10" placeholder="Text input" id="comment"></textarea>
-          </div> -->
+          </div>
           <div class="conditions">
             <label  class="conditions-label" for="conditions">
             <input class="checkbox" type="checkbox" name="conditions" value="conditions" id="conditions">
@@ -461,6 +460,6 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
-  <script src="./js/mobilemenu.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>
