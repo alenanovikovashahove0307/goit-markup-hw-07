@@ -56,7 +56,7 @@
   url(../img/people-office.jpg);
   padding-top: 188px; 
   padding-bottom: 188px; 
-  max-width: 1440px;
+  /* max-width: 1440px; */
   min-height: 600px;
 }
 .hero-title {
@@ -160,14 +160,16 @@
 .footer{
   padding-top: 100px;
   padding-bottom: 100px;
+  
 }
 .footer > .container {
   width: 1440px;
   
+  
 }
 .footer-social{
   flex-direction: row;
-  margin-left: 0px;
+  /* margin-left: 0px; */
 }
 .footer-logo {
   justify-content: start;
@@ -186,6 +188,7 @@
 }
 .subscribe-form {
   margin-left: 80px;
+  /* width: 100%; */
 }
 .subscribe-email-btn{
   display: flex;

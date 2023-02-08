@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px)  {
 .container {
   max-width: 766px;
+  
 }
 .header-navigation {
  display: flex;
@@ -97,7 +98,7 @@ margin-right: 76px;
   background-image:linear-gradient(rgba(46, 47, 66, 0.7),
   rgba(0, 0, 0, 0.25)),
   url(../img/people-office-tabl.jpg);
-  max-width: 768px;
+  /* max-width: 768px; */
   height: 436px;
 }
 .hero-title {
@@ -141,12 +142,13 @@ margin-right: 76px;
 }
 /* ----FOOTER------- */
 .footer > .container{
-  width: 768px;
+  /* width: 768px; */
+  width: 100%;
 }
 .footer-social{
   flex-direction: row;
   text-align: start;
-  margin-left: 93px;
+  
 }
 }
 @media screen and (max-width: 1199px){
@@ -166,6 +168,7 @@ margin-right: 76px;
 
 .footer-social{
   flex-wrap: wrap;
+  /* margin-left: 93px; */
 }
 .footer-logo {
   justify-content: start;

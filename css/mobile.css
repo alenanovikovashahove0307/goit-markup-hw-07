@@ -50,10 +50,13 @@ body{
 .container{
  padding-left: 15px; 
  padding-right: 15px;
+ margin-left: auto;
+ margin-right: auto;
 }
 @media screen and (min-width: 480px){
  .container{
-  max-width: 428px;
+  /* max-width: 428px; */
+  width: 100%;
  }
 }
 
@@ -103,14 +106,14 @@ color: var(--main-h-color);
   background-color: transparent;
   border: none;
   cursor: pointer;
-  /* margin-left: auto; */
+  
 }
 .icon-menu-svg{
   stroke: #000000;
 }
 .mob-menu{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   background-color: #FFFFFF;
   top: 0px;
@@ -150,7 +153,9 @@ color: var(--main-h-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  color: var(--main-h-color); 
+}
+.mob-menu-link{
+  color: var(--main-h-color);
 }
 .mob-menu-item:not(:last-child){
   margin-bottom: 40px;
@@ -187,8 +192,6 @@ color: var(--main-h-color);
 }
 .mob-menu-tel{
   display: block;
-  /* position: relative; */
-  /* margin-top: 80px; */
   font-size: 36px;
   line-height: 1.11;
   color: var(--main-text-color);
@@ -198,7 +201,6 @@ color: var(--main-h-color);
 .mob-menu-tel:focus{
   color: var(--logo-color); 
 }
-
 .mob-menu-mail {
   display: block;
   margin-top: 40px;
@@ -211,7 +213,6 @@ color: var(--main-h-color);
 .mob-menu-mail:focus{
  color: var(--logo-color); 
 }
-
 /* ---- HERO----- */
 .hero {
   background-color: #2E2F42;
@@ -224,16 +225,14 @@ color: var(--main-h-color);
   text-align: center;
   padding-top: 112px; 
   padding-bottom: 112px;
-  
   height: 432px;
 }
 .hero > .container{
-  width: 480px;
+  width: 100%;
   margin: 0px auto;
 } 
 .hero-title {
-  width: 318px;
-  
+  width: 100%;
   display: inline-block;
   margin-bottom: 72px;
   align-items: center;
@@ -264,13 +263,10 @@ color: var(--main-h-color);
   background-color: var(--logo-color);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .hero-btn:hover,
 .hero-btn:focus{
   background-color: var(--present-btn);
-  
 }
 /*------- MODAL-------- */
 .backdrop{
@@ -339,7 +335,6 @@ color: var(--main-h-color);
 .modal-form{
   position: fixed;
   min-width: 360px;
-  
 }
 .modal-contact{
   position: relative;
@@ -350,13 +345,11 @@ color: var(--main-h-color);
 .modal-contact-textarea{
   display: flex;
   flex-direction: column;
-  
   margin-bottom: 16px;
 }
 .modal-form .modal-texte{
   display: flex;
   text-align: center;
-  
   justify-content: center;
 }
 .modal-send {
@@ -379,11 +372,9 @@ color: var(--main-h-color);
 .modal-send:hover,
 .modal-send:focus{
   background-color: var(--present-btn);
-  
 }
 .modal-texte{
   display: inline-block;
-  
   margin-bottom: 16px;
   text-align: center;
   font-weight: 500;
@@ -408,7 +399,6 @@ color: var(--main-h-color);
 .modal-textarea{
   padding-top: 8px;
   padding-left: 16px;
-  
   max-height: 120px;
 }
 .modal-contact textarea::placeholder{
@@ -439,7 +429,6 @@ color: var(--main-h-color);
 }
 .conditions-link::after{
   content: "";
-  
   bottom: 0px;
   top: 0px;
   display: block;
@@ -515,7 +504,7 @@ color: var(--main-h-color);
   flex-direction: column;
 }
 .purposes-item{
-  width: 396px;
+  width: 100%;
   margin-bottom: 72px;
   margin-right: 0px;
 }
@@ -524,7 +513,6 @@ color: var(--main-h-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   color: var(--main-h-color);
 }
 .purposes-item .texte {
@@ -536,8 +524,6 @@ color: var(--main-h-color);
 .purposes-icon{
   display: none;
 }
-/* ------ BUSSINES------*/
-
 /*-------TEAM---------  */
 .team {
   background-color: var(--logo-span-footer);
@@ -635,7 +621,6 @@ color: var(--main-h-color);
 }
 .customers-list{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   column-gap: 16px;
   row-gap: 72px;
@@ -673,23 +658,20 @@ color: var(--main-h-color);
   background: var(--main-h-color); 
 }
 .footer > .container{
-  width: 480px;
+  width: 100%;
 }
 .footer-social{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* margin: 0 auto; */
   background: var(--main-h-color); 
-  
 }
 .logo-footer{
   display: inline-block;
   align-items: center;
   text-align: center;
   justify-content: center;
-  
 }
 .footer-logo {
   margin-bottom: 16px;
@@ -725,8 +707,6 @@ color: var(--main-h-color);
 }
 .social {
   display: block;
-  /* margin-top: 72px;
-  margin-bottom: 72px; */
 }
 .social-title{
   margin-bottom: 16px;
@@ -760,16 +740,15 @@ color: var(--main-h-color);
 }
 .subscribe-form {
   display: block;
-  width: 453px;
+  width: 100%;
   min-height: 80px;  
 }
 .subscribe-email-btn{
   display: inline-block;
-  /* position: relative; */
 }
 .subscribe-input{
   margin-bottom: 16px;
-  width: 396px;
+  width: 100%;
   height: 40px;
   background-color: var(--main-h-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -785,7 +764,7 @@ color: var(--main-h-color);
   display: flex;
   border-radius: 4px;
   border: none;
-  margin: 0 auto; 
+   
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
@@ -795,11 +774,7 @@ color: var(--main-h-color);
   background-color: var(--logo-color);
 }
 .subscribe-icon-svg{
-  /* top: 8px;
-  right: 24px; */
-  /* position: absolute; */
   fill: var(--first-btn-color);
-  /* padding-right: 8px; */
 }
 .subscribe-form .texte{
   font-family: Roboto;
@@ -816,8 +791,13 @@ color: var(--main-h-color);
 .purposes-item:nth-child(4){
   margin-bottom: 0px;
 }
+.purposes-item .title{
+  text-align: center;
+}
 .logo-footer{
  margin: 0 auto;
+ display: flex;
+ flex-direction: column;
 }
 .header-tel{
   display: none;
@@ -825,13 +805,24 @@ color: var(--main-h-color);
 .header-mail{
   display: none; 
 }
-
 }
 @media screen and (max-width: 1199px){
 .team-list{
  flex-wrap: wrap;
 }
+.customers-list{
+ flex-wrap: wrap;
+}
 .bussines {
   display: none;
+}
+.purposes-item:nth-child(4){
+  margin-bottom: 0px;
+}
+.purposes-item:nth-child(3){
+  margin-bottom: 0px;
+}
+.subscribe-btn{
+  margin: 0 auto;
 }
 }
